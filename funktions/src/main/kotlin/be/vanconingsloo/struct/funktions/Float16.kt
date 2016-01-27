@@ -1,4 +1,4 @@
-package be.vanconingsloo.struc.funktions
+package be.vanconingsloo.struct.funktions
 
 import java.text.MessageFormat
 import java.util.*
