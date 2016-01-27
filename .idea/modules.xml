@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Astraea/Astraea.iml" filepath="$PROJECT_DIR$/.idea/modules/Astraea/Astraea.iml" group="Astraea" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Astraea/Astraea_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Astraea/Astraea_main.iml" group="Astraea" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Astraea/Astraea_package.iml" filepath="$PROJECT_DIR$/.idea/modules/Astraea/Astraea_package.iml" group="Astraea" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Astraea/Astraea_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Astraea/Astraea_test.iml" group="Astraea" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Cephalus/Cephalus.iml" filepath="$PROJECT_DIR$/.idea/modules/Cephalus/Cephalus.iml" group="Cephalus" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Cephalus/Cephalus_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Cephalus/Cephalus_main.iml" group="Cephalus" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Cephalus/Cephalus_package.iml" filepath="$PROJECT_DIR$/.idea/modules/Cephalus/Cephalus_package.iml" group="Cephalus" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Cephalus/Cephalus_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Cephalus/Cephalus_test.iml" group="Cephalus" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/funktions/funktions.iml" filepath="$PROJECT_DIR$/.idea/modules/funktions/funktions.iml" group="funktions" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/funktions/funktions_main.iml" filepath="$PROJECT_DIR$/.idea/modules/funktions/funktions_main.iml" group="funktions" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/funktions/funktions_test.iml" filepath="$PROJECT_DIR$/.idea/modules/funktions/funktions_test.iml" group="funktions" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/struc.iml" filepath="$PROJECT_DIR$/.idea/modules/struc.iml" />
+    </modules>
+  </component>
+</project>

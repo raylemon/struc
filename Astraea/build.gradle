@@ -1,0 +1,29 @@
+apply plugin: 'kotlin'
+apply from: 'https://dl.bintray.com/shemnon/javafx-gradle/8.1.1/javafx.plugin'
+
+dependencies {
+    compile project(":funktions")
+
+}
+javafx {
+    appID 'Astraea'
+    appName "Astraea"
+    mainClass 'astraea.MainApp'
+    width = 800
+    height = 600
+    embedJNLP = false
+    embedLauncher = false
+    signingMode 'release'
+    copyright = "© Cédric Vanconingsloo"
+    description = "Générateur d'exercices pour le cours de Structure des Ordinateurs\n Créé en Kotlin avec JavaFX 8"
+    vendor = "RayLemon"
+    installSystemWide = false
+    menu = false
+    shortcut = true
+
+    icons {
+        shortcut = 'shortcutIcon.png'
+        volume = 'volumeIcon.png'
+        setup = 'setupIcon.png'
+    }
+}

@@ -1,0 +1,5 @@
+rootProject.name = 'struc'
+include 'funktions'
+include 'Cephalus'
+include 'Astraea'
+
