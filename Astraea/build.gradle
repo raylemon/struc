@@ -8,7 +8,7 @@ dependencies {
 javafx {
     appID 'Astraea'
     appName "Astraea"
-    mainClass 'astraea.MainApp'
+    mainClass 'be.vanconingsloo.struct.astraea.MainApp'
     width = 800
     height = 600
     embedJNLP = false

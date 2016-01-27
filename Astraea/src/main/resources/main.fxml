@@ -3,7 +3,7 @@
 <?import javafx.geometry.Insets?><?import javafx.scene.control.*?><?import javafx.scene.layout.*?><?import javafx.scene.text.Font?>
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="599.0"
     prefWidth="798.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1"
-    fx:controller="exer6.kontroller.Kontroler">
+    fx:controller="be.vanconingsloo.struct.astraea.kontroller.Kontroler">
     <bottom>
         <ButtonBar BorderPane.alignment="CENTER" prefHeight="40.0" prefWidth="200.0">
             <buttons>
