@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.collections.FXCollections?><?import javafx.geometry.Insets?><?import javafx.scene.control.*?><?import javafx.scene.image.*?><?import javafx.scene.layout.*?><?import java.lang.String?>
+<BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity"
+    minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8.0.40"
+    xmlns:fx="http://javafx.com/fxml/1" fx:controller="be.vanconingsloo.struct.kleio.kontroller.MainKontroller">
+    <top>
+        <VBox BorderPane.alignment="CENTER" spacing="5.0">
+            <BorderPane.margin>
+                <Insets />
+            </BorderPane.margin>
+            <HBox alignment="CENTER" spacing="15.0">
+                <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#doSave">
+                    <graphic>
+                        <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                            <Image url="@imgs/save.png" />
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#doOpen">
+                    <graphic>
+                        <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                            <Image url="@imgs/open.png" />
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#doPrint">
+                    <graphic>
+                        <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                            <Image url="@imgs/printer.png" />
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <HBox HBox.hgrow="ALWAYS" spacing="10.0">
+                    <ToggleButton HBox.hgrow="ALWAYS" maxHeight="1.7976931348623157E308"
+                        maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Conversions"
+                        fx:id="tgbtConversions">
+                        <graphic>
+                            <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                <Image url="@imgs/guest.png" />
+                            </ImageView>
+                        </graphic>
+                    </ToggleButton>
+                    <ToggleButton HBox.hgrow="ALWAYS" maxHeight="1.7976931348623157E308"
+                        maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Arithmétique"
+                        fx:id="tgbtArithmetics">
+                        <graphic>
+                            <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                <Image url="@imgs/worker.png" />
+                            </ImageView>
+                        </graphic>
+                    </ToggleButton>
+                    <ToggleButton HBox.hgrow="ALWAYS" maxHeight="1.7976931348623157E308"
+                        maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Flottants" fx:id="tgbtFloat">
+                        <graphic>
+                            <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                <Image url="@imgs/manager.png" />
+                            </ImageView>
+                        </graphic>
+                    </ToggleButton>
+                    <ToggleButton HBox.hgrow="ALWAYS" maxHeight="1.7976931348623157E308"
+                        maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="CRC" fx:id="tgbtCrc">
+                        <graphic>
+                            <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                <Image url="@imgs/administrator.png" />
+                            </ImageView>
+                        </graphic>
+                    </ToggleButton>
+                    <ToggleButton HBox.hgrow="ALWAYS" maxHeight="1.7976931348623157E308"
+                        maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Hamming" fx:id="tgbtHamming">
+                        <graphic>
+                            <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                <Image url="@imgs/businessman.png" />
+                            </ImageView>
+                        </graphic>
+                    </ToggleButton>
+                </HBox>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="30.0" prefWidth="600.0" spacing="5.0" visible="false" fx:id="genBox">
+                <padding>
+                    <Insets left="5.0" right="5.0" />
+                </padding>
+                <Button mnemonicParsing="false" onAction="#doGenerate" text="Générer" />
+                <Slider HBox.hgrow="SOMETIMES" blockIncrement="1.0" majorTickUnit="1.0" max="5.0" min="1.0"
+                    minorTickCount="0" showTickLabels="true" showTickMarks="true" snapToTicks="true" value="1.0"
+                    fx:id="slNumberAssessment" />
+                <Label text="jeu(x) de" />
+                <Slider HBox.hgrow="ALWAYS" blockIncrement="1.0" majorTickUnit="5.0" max="20.0" minorTickCount="1"
+                    showTickLabels="true" showTickMarks="true" snapToTicks="true" value="5.0" fx:id="slQuestions" />
+                <Label text="questions" />
+            </HBox>
+        </VBox>
+    </top>
+    <center>
+        <TabPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="1024.0"
+            tabClosingPolicy="UNAVAILABLE">
+            <Tab closable="false" text="Consignes">
+                <graphic>
+                    <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                        <Image url="@imgs/graduation_cap.png" />
+                    </ImageView>
+                </graphic>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                    <HBox AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0"
+                        alignment="CENTER_LEFT" layoutX="26.0" layoutY="14.0" prefHeight="35.0" prefWidth="960.0"
+                        spacing="10.0">
+                        <TextField HBox.hgrow="ALWAYS" prefHeight="25.0" prefWidth="200.0"
+                            promptText="Titre du document" fx:id="tabInst_tfTitle" />
+                        <DatePicker promptText="Date de du document" fx:id="tabInst_dateDoc" />
+                        <ComboBox prefWidth="150.0" promptText="Choisir" fx:id="tabInst_cbChoice">
+                            <items>
+                                <FXCollections fx:factory="observableArrayList">
+                                    <String fx:value="Interro" />
+                                    <String fx:value="Devoir" />
+                                    <String fx:value="Examen - 1ère session" />
+                                    <String fx:value="Examen - 2ème session" />
+                                </FXCollections>
+                            </items>
+                        </ComboBox>
+                        <DatePicker promptText="Date de remise" fx:id="tabInst_dateDeposit" />
+                        <TextField promptText="Points" fx:id="tabInst_tfPoints" />
+                    </HBox>
+                    <TextArea AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0"
+                        layoutX="14.0" layoutY="49.0" prefHeight="598.0" prefWidth="996.0"
+                        fx:id="tabInst_taInstructions" />
+                </AnchorPane>
+            </Tab>
+            <Tab closable="false" text="Conversions" fx:id="tabConversions">
+                <graphic>
+                    <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                        <Image url="@imgs/guest.png" />
+                    </ImageView>
+                </graphic>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                    <fx:include AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0"
+                        AnchorPane.topAnchor="0" source="conv.fxml" fx:id="conv" />
+                </AnchorPane>
+            </Tab>
+            <Tab closable="false" text="Arithmétique" fx:id="tabArithmetic">
+                <graphic>
+                    <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                        <Image url="@imgs/worker.png" />
+                    </ImageView>
+                </graphic>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                    <fx:include AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0"
+                        AnchorPane.topAnchor="0" source="arith.fxml" fx:id="arith" />
+                </AnchorPane>
+            </Tab>
+            <Tab closable="false" text="Flottants" fx:id="tabFloat">
+                <graphic>
+                    <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                        <Image url="@imgs/manager.png" />
+                    </ImageView>
+                </graphic>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                    <fx:include AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0"
+                        AnchorPane.topAnchor="0" source="float.fxml" fx:id="i3e" />
+                </AnchorPane>
+            </Tab>
+            <Tab closable="false" text="CRC" fx:id="tabCrc">
+                <graphic>
+                    <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                        <Image url="@imgs/administrator.png" />
+                    </ImageView>
+                </graphic>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                    <fx:include AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0"
+                        AnchorPane.topAnchor="0" source="crc.fxml" fx:id="crc" />
+                </AnchorPane>
+            </Tab>
+            <Tab closable="false" text="Hamming" fx:id="tabHamming">
+                <graphic>
+                    <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                        <Image url="@imgs/businessman.png" />
+                    </ImageView>
+                </graphic>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                    <fx:include AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0"
+                        AnchorPane.topAnchor="0" source="hamming.fxml" fx:id="hamming" />
+                </AnchorPane>
+            </Tab>
+        </TabPane>
+    </center>
+</BorderPane>

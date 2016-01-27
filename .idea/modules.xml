@@ -6,10 +6,10 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Astraea/Astraea_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Astraea/Astraea_main.iml" group="Astraea" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Astraea/Astraea_package.iml" filepath="$PROJECT_DIR$/.idea/modules/Astraea/Astraea_package.iml" group="Astraea" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Astraea/Astraea_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Astraea/Astraea_test.iml" group="Astraea" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Cephalus/Cephalus.iml" filepath="$PROJECT_DIR$/.idea/modules/Cephalus/Cephalus.iml" group="Cephalus" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Cephalus/Cephalus_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Cephalus/Cephalus_main.iml" group="Cephalus" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Cephalus/Cephalus_package.iml" filepath="$PROJECT_DIR$/.idea/modules/Cephalus/Cephalus_package.iml" group="Cephalus" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Cephalus/Cephalus_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Cephalus/Cephalus_test.iml" group="Cephalus" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Kleio/Kleio.iml" filepath="$PROJECT_DIR$/.idea/modules/Kleio/Kleio.iml" group="Kleio" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Kleio/Kleio_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Kleio/Kleio_main.iml" group="Kleio" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Kleio/Kleio_package.iml" filepath="$PROJECT_DIR$/.idea/modules/Kleio/Kleio_package.iml" group="Kleio" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Kleio/Kleio_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Kleio/Kleio_test.iml" group="Kleio" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/funktions/funktions.iml" filepath="$PROJECT_DIR$/.idea/modules/funktions/funktions.iml" group="funktions" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/funktions/funktions_main.iml" filepath="$PROJECT_DIR$/.idea/modules/funktions/funktions_main.iml" group="funktions" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/funktions/funktions_test.iml" filepath="$PROJECT_DIR$/.idea/modules/funktions/funktions_test.iml" group="funktions" />

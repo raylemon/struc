@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?><?import javafx.scene.layout.*?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+    prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1"
+    fx:controller="be.vanconingsloo.struct.kleio.kontroller.CrcKontroller">
+    <TableView AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+        AnchorPane.topAnchor="25.0" editable="true" layoutX="200.0" layoutY="25.0" prefHeight="375.0" prefWidth="600.0"
+        fx:id="table">
+        <columns>
+            <TableColumn prefWidth="75.0" text="Questionnaire" fx:id="crc_colAssessNumber" />
+            <TableColumn prefWidth="75.0" text="Encodage" fx:id="crc_colConversion" />
+            <TableColumn prefWidth="75.0" text="Message">
+                <columns>
+                    <TableColumn prefWidth="75.0" text="Valeur" fx:id="crc_colMessage" />
+                    <TableColumn prefWidth="75.0" text="Base" fx:id="crc_colSourceBase" />
+                </columns>
+            </TableColumn>
+            <TableColumn prefWidth="75.0" text="Diviseur" fx:id="crc_colDivisor" />
+            <TableColumn prefWidth="75.0" text="Solution">
+                <columns>
+                    <TableColumn prefWidth="75.0" text=" Base" fx:id="crc_colDestBase" />
+                    <TableColumn prefWidth="75.0" text="Solution" fx:id="crc_colSolution" />
+                </columns>
+            </TableColumn>
+        </columns>
+        <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+        </columnResizePolicy>
+        <contextMenu>
+            <ContextMenu>
+                <items>
+                    <MenuItem mnemonicParsing="false" onAction="#doAddLine" text="Ajouter une ligne vide" />
+                    <MenuItem mnemonicParsing="false" onAction="#doRemoveLine" text="Supprimer une ligne" />
+                    <MenuItem mnemonicParsing="false" onAction="#doClearTable" text="Vider la table" />
+                </items>
+            </ContextMenu>
+        </contextMenu>
+    </TableView>
+    <TextField AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" promptText="Énoncé"
+        fx:id="tfStatement" />
+</AnchorPane>

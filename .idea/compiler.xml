@@ -27,6 +27,9 @@
       <module name="Cephalus_test" target="1.8" />
       <module name="funktions_main" target="1.8" />
       <module name="funktions_test" target="1.8" />
+      <module name="Kleio_main" target="1.8" />
+      <module name="Kleio_package" target="1.8" />
+      <module name="Kleio_test" target="1.8" />
       <module name="struc_main" target="1.8" />
       <module name="struc_test" target="1.8" />
     </bytecodeTargetLevel>
