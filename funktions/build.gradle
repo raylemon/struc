@@ -1,5 +1,5 @@
 apply plugin: 'kotlin'
 
-/*dependencies {
+dependencies {
     compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-}*/
+}
