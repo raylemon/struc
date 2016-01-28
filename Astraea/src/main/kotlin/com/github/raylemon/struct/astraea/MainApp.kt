@@ -18,7 +18,7 @@ public class MainApp : Application() {
             title = "Astraea"
             scene = Scene(root)
             show()
-            icons.add(Image(MainApp::class.java.getResourceAsStream("/icon.png")))
+            icons.add(Image(MainApp::class.java.getResourceAsStream("/astraea.png")))
         }
     }
 }

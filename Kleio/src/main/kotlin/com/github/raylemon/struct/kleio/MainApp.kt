@@ -20,7 +20,7 @@ public class MainApp : Application() {
             scene = Scene(root)
             show()
         }
-        primaryStage?.icons?.add(Image(javaClass.getResourceAsStream("/imgs/graduation_cap.png")))
+        primaryStage?.icons?.add(Image(javaClass.getResourceAsStream("/imgs/kleio.png")))
     }
 }
 

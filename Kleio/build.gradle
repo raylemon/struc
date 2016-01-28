@@ -9,7 +9,7 @@ dependencies {
 javafx {
     appID 'Kleio'
     appName "Kleio"
-    mainClass 'kleio.MainApp'
+    mainClass 'com.github.raylemon.struct.kleio.MainAppKt'
     width = 1024
     height = 768
     embedJNLP = false
@@ -18,13 +18,13 @@ javafx {
     copyright = "© Cédric Vanconingsloo"
     description = "Générateur d'interros pour le cours de Structure des Ordinateurs\n Créé en Kotlin avec JavaFX 8"
     vendor = "RayLemon"
-    installSystemWide = false
+    installSystemWide = true
     menu = false
     shortcut = true
 
     icons {
-        shortcut = 'shortcutIcon.png'
-        volume = 'volumeIcon.png'
-        setup = 'setupIcon.png'
+        shortcut = 'kleio.png'
+        volume = 'kleio.png'
+        setup = 'kleio.png'
     }
 }
