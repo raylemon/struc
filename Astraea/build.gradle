@@ -8,7 +8,7 @@ dependencies {
 javafx {
     appID 'Astraea'
     appName "Astraea"
-    mainClass 'com.github.raylemon.struct.astraea.MainApp'
+    mainClass 'com.github.raylemon.struct.astraea.MainAppKt'
     width = 800
     height = 600
     embedJNLP = false
@@ -17,7 +17,7 @@ javafx {
     copyright = "© Cédric Vanconingsloo"
     description = "Générateur d'exercices pour le cours de Structure des Ordinateurs\n Créé en Kotlin avec JavaFX 8"
     vendor = "RayLemon"
-    installSystemWide = false
+    installSystemWide = true
     menu = false
     shortcut = true
 
