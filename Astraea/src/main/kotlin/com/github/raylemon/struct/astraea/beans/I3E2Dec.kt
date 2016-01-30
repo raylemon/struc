@@ -6,7 +6,7 @@ import java.math.BigInteger
 /**
  * Created by big04 on 17-09-15.
  */
-public class I3E2Dec : Exercise() {
+class I3E2Dec : Exercise() {
     private val bSource = octOrHex()
     private var num = getAnyFloat16()
     private var source = formatValue()

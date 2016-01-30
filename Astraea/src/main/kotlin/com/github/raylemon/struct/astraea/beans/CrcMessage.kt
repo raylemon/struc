@@ -5,7 +5,7 @@ import com.github.raylemon.struct.funktions.*
 /**
  * Created by big04 on 17-09-15.
  */
-public class CrcMessage() : Exercise() {
+class CrcMessage() : Exercise() {
     private val divisor = getDivisor()
     private var binMsg = generateMessage()
     private var encoded = nextBoolean()

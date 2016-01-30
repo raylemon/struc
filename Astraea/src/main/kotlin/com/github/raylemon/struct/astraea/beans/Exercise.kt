@@ -6,13 +6,13 @@ import javafx.beans.property.SimpleStringProperty
 /**
  * Created by big04 on 16-09-15.
  */
-public abstract class Exercise {
+abstract class Exercise {
     abstract val mSol: String
     abstract val mExtra: String?
     abstract override fun toString(): String
 }
 
-public class ExerciseWrapper(val bean: Exercise) {
+class ExerciseWrapper(val bean: Exercise) {
     val question = ReadOnlyStringWrapper(bean.toString())
     val attempt = SimpleStringProperty()
     val solution = ReadOnlyStringWrapper(bean.mSol)

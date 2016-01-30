@@ -10,7 +10,7 @@ import javafx.stage.Stage
 /**
  * Created by big04 on 16-09-15.
  */
-public class MainApp : Application() {
+class MainApp : Application() {
     override fun start(primaryStage: Stage?) {
         val loader = FXMLLoader(javaClass.getResource("/main.fxml"))
         val root = loader.load<Parent>()

@@ -8,10 +8,10 @@ import java.util.*
  * Created by big04 on 13-08-15.
  * Float16 object.
  */
-public object Float16 {
-    public val INFINITY: Int = 0x7C00
+object Float16 {
+    val INFINITY: Int = 0x7C00
     // ignores the higher 16 bits
-    public fun toFloat(hbits: Int): Float {
+    fun toFloat(hbits: Int): Float {
         var mant = hbits and 1023            // 10 bits mantissa
         var exp = hbits and 31744            // 5 bits exponent
         if (exp == 31744)
@@ -40,7 +40,7 @@ public object Float16 {
     }
 
     // returns all higher 16 bits as 0 for all results
-    public fun fromFloat(fval: Float): Int {
+    fun fromFloat(fval: Float): Int {
         val fbits = java.lang.Float.floatToIntBits(fval)
         val sign = fbits.ushr(16) and 32768          // sign only
         var v = (fbits and 2147483647) + 4096 // rounded value
@@ -71,9 +71,9 @@ public object Float16 {
                 ).ushr(126 - v))   // div by 2^(1-(exp-127+15)) and >> 13 | exp=0
     }
 
-    public fun toString(number: Float, base: Int): String = Integer.toString(fromFloat(number), base)
+    fun toString(number: Float, base: Int): String = Integer.toString(fromFloat(number), base)
 
-    public infix fun toPolynom(num: Float): String {
+    infix fun toPolynom(num: Float): String {
         if (num.isInfinite() or num.isNaN()) return num.toString()
         if (fromFloat(num) in 0x001..0x03FF) return "Dénormalisé"
         var n = Math.abs(num).toFloat()

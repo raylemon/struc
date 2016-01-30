@@ -1,12 +1,12 @@
 apply plugin: 'kotlin'
-apply from: 'https://dl.bintray.com/shemnon/javafx-gradle/8.1.1/javafx.plugin'
+//apply from: 'https://dl.bintray.com/shemnon/javafx-gradle/8.1.1/javafx.plugin'
 
 dependencies {
     compile project(":funktions")
     compile 'org.odftoolkit:simple-odf:0.6.6'
 
 }
-javafx {
+/*javafx {
     appID 'Kleio'
     appName "Kleio"
     mainClass 'com.github.raylemon.struct.kleio.MainAppKt'
@@ -27,4 +27,4 @@ javafx {
         volume = 'kleio.png'
         setup = 'kleio.png'
     }
-}
+}*/

@@ -74,7 +74,7 @@ fun Int.anyValue(base: Int): String {
  * Génère un nombre flottant au format IEE16
  * @return un nombre flottant équivalent au format demi-précision
  */
-public fun getAnyFloat16(): Float {
+fun getAnyFloat16(): Float {
     try {
         val tmp = Math.random()//random.nextInt()
         val b = tmp * (2 * Float16.INFINITY + 1 ) - Float16.INFINITY
@@ -90,13 +90,13 @@ public fun getAnyFloat16(): Float {
  * Génère une base aléatoire
  * @return 8 ou 16
  */
-public fun octOrHex() = if (random.nextBoolean()) 8 else 16
+fun octOrHex() = if (random.nextBoolean()) 8 else 16
 
 /**
  * Génère un message aléatoire
  * @return le message formaté en binaire
  */
-public fun generateMessage(): String {
+fun generateMessage(): String {
     val MAX = 10000
     val MIN = 5000
     val f = random.nextFloat() * (MAX - MIN) + MIN
@@ -108,19 +108,19 @@ public fun generateMessage(): String {
  * Génère un diviseur pour le CRC
  * @return un texte binaire représentant le diviseur
  */
-public fun getDivisor() = Integer.toBinaryString(random.nextInt(100))
+fun getDivisor() = Integer.toBinaryString(random.nextInt(100))
 
 /**
  * génère un nombre aléatoire
  * @param upper la borne supérieure
  * @return un nombre aléatoire compris entre [0 et upper[
  */
-public fun nextInt(upper: Int) = random.nextInt(upper)
+fun nextInt(upper: Int) = random.nextInt(upper)
 
 /**
  * génère un boolean
  * @return un boolean
  */
-public fun nextBoolean() = random.nextBoolean()
+fun nextBoolean() = random.nextBoolean()
 
 fun Int.toBinaryString() = Integer.toBinaryString(this)

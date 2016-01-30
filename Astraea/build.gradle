@@ -1,11 +1,11 @@
 apply plugin: 'kotlin'
-apply from: 'https://dl.bintray.com/shemnon/javafx-gradle/8.1.1/javafx.plugin'
+//apply from: 'https://dl.bintray.com/shemnon/javafx-gradle/8.1.1/javafx.plugin'
 
 dependencies {
     compile project(":funktions")
 
 }
-javafx {
+/*javafx {
     //appID 'Astraea'
     appID '{C10CF036-CD51-4DA0-8F56-E0E194042623}'
     appName "Astraea"
@@ -27,4 +27,4 @@ javafx {
         volume = 'astraea.png'
         setup = 'astraea.png'
     }
-}
+}*/

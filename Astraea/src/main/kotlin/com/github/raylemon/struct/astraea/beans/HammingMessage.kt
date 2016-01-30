@@ -6,7 +6,7 @@ import com.github.raylemon.struct.funktions.*
  * Created by big04 on 17-09-15.
  */
 
-public class HammingMessage() : Exercise() {
+class HammingMessage() : Exercise() {
     private var message = ""
         get() {
             if (binMsg.isEmpty()) {

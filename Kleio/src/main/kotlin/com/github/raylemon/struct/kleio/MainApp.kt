@@ -11,7 +11,7 @@ import javafx.stage.Stage
  * Created by big04 on 29-10-15.
  * Main class. Used to launch GUI
  */
-public class MainApp : Application() {
+class MainApp : Application() {
     override fun start(primaryStage: Stage?) {
         val loader = FXMLLoader(MainApp::class.java.getResource("/main.fxml"))
         val root = loader.load<Parent>()

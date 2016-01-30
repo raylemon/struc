@@ -3,7 +3,7 @@ package com.github.raylemon.struct.astraea.beans
 /**
  * Created by big04 on 16-09-15.
  */
-public enum class Type {
+enum class Type {
     NOTHING,
     CONVERSION,
     ARITH,

@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+Class-Path: kotlin-runtime-1.0.0-rc-1017.jar kotlin-stdlib-1.0.0-rc-10
+ 17.jar odfdom-java-0.8.7.jar simple-odf-0.6.6.jar xercesImpl-2.9.1.ja
+ r xml-apis-1.3.04.jar
+Main-Class: com.github.raylemon.struct.kleio.MainAppKt
+

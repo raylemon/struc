@@ -20,7 +20,7 @@ class Instr() {
     val mChoice = SimpleStringProperty("Interro")
     val mPoints = SimpleIntegerProperty(20)
 
-    public fun checkIsValid(): Boolean {
+    fun checkIsValid(): Boolean {
         if (mTitle.value.isNullOrEmpty()) {
             alert("Titre manquant")
             return false

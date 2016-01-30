@@ -7,7 +7,7 @@ import com.github.raylemon.struct.funktions.toInt
 /**
  * Created by big04 on 16-09-15.
  */
-public class Conversion : Exercise() {
+class Conversion : Exercise() {
     private var err = ""
 
     private var mSource = nextInt(19) + 2

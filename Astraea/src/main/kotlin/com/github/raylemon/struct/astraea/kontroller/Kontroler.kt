@@ -12,7 +12,7 @@ import javafx.scene.control.cell.TextFieldTableCell
 /**
  * Created by big04 on 16-09-15.
  */
-public class Kontroler() {
+class Kontroler() {
     @FXML lateinit var table: TableView<ExerciseWrapper>
     @FXML lateinit var colResponse: TableColumn<ExerciseWrapper, String>
     @FXML lateinit var colExercise: TableColumn<ExerciseWrapper, String>
