@@ -49,7 +49,7 @@ class Arith(assessNumber: Int,
     private fun compute(): Int {
         return when (mOperator.value) {
             '+' -> num1 + num2
-            '-' -> num1 * num2
+            '-' -> num1 - num2
             '×' -> num1 * num2
             '÷' -> try {
                 num1 / num2
@@ -71,7 +71,7 @@ class Arith(assessNumber: Int,
         mOperator.addListener { observableValue, old, new -> mSolution.value = compute().anyValue(mBaseDest.value) }
 
         mNumberSrc1.addListener { observableValue, old, new ->
-            if (!new.clearString().matches("[0-9A-F]+".toRegex())) {
+            if (!new.clearString().matches("[0-9A-F-]+".toRegex())) {
                 Alert(Alert.AlertType.WARNING,
                         "Texte incorrect \n Inscrire uniquement un nombre !",
                         ButtonType.OK).show()
@@ -87,14 +87,14 @@ class Arith(assessNumber: Int,
         }
 
         mNumberSrc2.addListener { observableValue, old, new ->
-            if (!new.clearString().matches("[0-9A-F]+".toRegex())) {
+            if (!new.clearString().matches("[0-9A-F-]+".toRegex())) {
                 Alert(Alert.AlertType.WARNING,
                         "Texte incorrect \n Inscrire uniquement un nombre !",
                         ButtonType.OK).show()
                 mNumberSrc2.value = old
             } else {
                 try {
-                    num1 = new.clearString().toInt(mBaseSrc2.value)
+                    num2 = new.clearString().toInt(mBaseSrc2.value)
                     mSolution.value = compute().anyValue(mBaseDest.value)
                 } catch (nfe: NumberFormatException) {
                     mSolution.value = "Impossible"

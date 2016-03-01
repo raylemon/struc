@@ -64,13 +64,14 @@ class MainKontroller {
                             buildHeader(instructions)
                             when {
                                 !tabConversions.isDisabled -> writeParagraph<Conversion>(convController.tfStatement.text, convController.table.items.filter { it.mAssessNumber.value == i })
-                                !tabConversions.isDisabled -> writeParagraph<Arith>(arithController.tfStatement.text, arithController.table.items.filter { it.mAssessNumber.value == i })
-                                !tabConversions.isDisabled -> writeParagraph<I3E>(i3eController.tfStatement.text, i3eController.table.items.filter { it.mAssessNumber.value == i })
-                                !tabConversions.isDisabled -> writeParagraph<CRC>(crcController.tfStatement.text, crcController.table.items.filter { it.mAssessNumber.value == i })
-                                !tabConversions.isDisabled -> writeParagraph<Hamming>(hammingController.tfStatement.text, hammingController.table.items.filter { it.mAssessNumber.value == i })
+                                !tabArithmetic.isDisabled -> writeParagraph<Arith>(arithController.tfStatement.text, arithController.table.items.filter { it.mAssessNumber.value == i })
+                                !tabFloat.isDisabled -> writeParagraph<I3E>(i3eController.tfStatement.text, i3eController.table.items.filter { it.mAssessNumber.value == i })
+                                !tabCrc.isDisabled -> writeParagraph<CRC>(crcController.tfStatement.text, crcController.table.items.filter { it.mAssessNumber.value == i })
+                                !tabHamming.isDisabled -> writeParagraph<Hamming>(hammingController.tfStatement.text, hammingController.table.items.filter { it.mAssessNumber.value == i })
                             }
-                        }.save(File(dir, "${instructions.mTitle.value}${i.toString()}.odf"))
+                        }.save(File(dir, "${instructions.mTitle.value}${i.toString()}${if (j == 0) "corr" else ""}.odt"))
             }
+            Alert(Alert.AlertType.INFORMATION, "Document généré", ButtonType.OK).show()
         }
     }
 
@@ -81,6 +82,7 @@ class MainKontroller {
             initialFileName = "${instructions.mTitle.value ?: LocalDate.now().toString()}.ray"
         }.showOpenDialog(null) ?: null
         file?.let {
+            //todo
         }
     }
 
@@ -92,6 +94,7 @@ class MainKontroller {
             initialFileName = "${instructions.mTitle.value ?: LocalDate.now().toString()}.ray"
         }.showSaveDialog(null) ?: null
         file?.let {
+            //todo
         }
     }
 

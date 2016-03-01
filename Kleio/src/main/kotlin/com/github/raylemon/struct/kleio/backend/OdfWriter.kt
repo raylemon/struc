@@ -1,6 +1,5 @@
 package com.github.raylemon.struct.kleio.backend
 
-import com.github.raylemon.struct.kleio.MainApp
 import com.github.raylemon.struct.kleio.beans.Exercise
 import com.github.raylemon.struct.kleio.beans.Instr
 import org.odftoolkit.simple.TextDocument
@@ -18,7 +17,7 @@ class OdfWriter(val assessNumber: Int, val printSolution: Boolean) {
 
     fun buildHeader(instructions: Instr) {
         with(doc.header.addTable(2, 4)) {
-            getCellByPosition(0, 0).setImage(MainApp::class.java.getResource("imgs/logo.png").toURI())
+            //getCellByPosition(0, 0).setImage(MainApp::class.java.getResource("imgs/logo.png").toURI())
             getCellRangeByPosition(0, 0, 0, 1).merge()
             getCellByPosition(1, 0).apply {
                 stringValue = "Structure des ordinateurs"
