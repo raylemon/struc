@@ -60,7 +60,7 @@ class Arith(assessNumber: Int,
         }
     }
 
-    override fun toString() = "${mNumberSrc1.value} ${mOperator.value} ${mNumberSrc2.value}"
+    override fun toString() = "${mNumberSrc1.value} ${mOperator.value} ${mNumberSrc2.value} = (${mBaseDest.value})"
 
     private fun getBase(): Int {
         val base = nextInt(4) + 1

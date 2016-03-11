@@ -51,7 +51,7 @@ class OdfWriter(val assessNumber: Int, val printSolution: Boolean) {
     fun <T : Exercise> writeParagraph(instructions: String, exercise: List<T>) {
         doc.addParagraph(instructions).applyHeading()
         val pi = doc.addParagraph(null)
-        exercise.forEach { pi.appendTextContent(it.toString() + if (printSolution) "${it.mSolution.value}\n" else "\n") }
+        exercise.forEach { pi.appendTextContent(it.toString() + if (printSolution) "\t${it.mSolution.value}\n" else "\n") }
     }
 
     fun save(path: File) = doc.save(path)
